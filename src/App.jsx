@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import myPhoto from './assets/ayesha_photo.jpeg'; // ඔයාගේ photo එක assets එකට දාන්න
-import myCV from './assets/updated cv 2026-05-11.pdf'; // CV එක assets එකට දාන්න
+import myCV from './assets/New CV.pdf'; // CV එක assets එකට දාන්න
 
 function App() {
   return (
@@ -348,7 +348,7 @@ function App() {
             <p>Stay connected through my professional social networks.</p>
             <div className="social-buttons">
               <a href="https://www.linkedin.com/in/ayesha-abeysinghe-882b5b356/" target="_blank" className="social-btn linkedin">LinkedIn</a>
-              <a href="https://github.com/ඔයාගේ-github-username" target="_blank" className="social-btn github">GitHub</a>
+              <a href="https://github.com/AyeshaDulanjali" target="_blank" className="social-btn github">GitHub</a>
               <a href="mailto:dilandiayesha@gmail.com" className="social-btn email">Send Email</a>
             </div>
           </div>
