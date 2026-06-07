@@ -1,7 +1,20 @@
 import React from 'react';
 import './App.css';
-import myPhoto from './assets/ayesha_photo.jpeg'; // ඔයාගේ photo එක assets එකට දාන්න
+import myPhoto from './assets/profilephoto2.jpeg'; // ඔයාගේ photo එක assets එකට දාන්න
 import myCV from './assets/New CV.pdf'; // CV එක assets එකට දාන්න
+import dpEdu from './assets/DPEducation.jpg';
+import nvq from './assets/NVQ4.jpg';
+import simplelearn from './assets/simplilearn.jpg';
+import moratuwa from './assets/web design moratuwa.jpg';
+import lpec from './assets/LPEC english.jpg';
+import mongodb from './assets/MongoDB Atlas.png';
+import project1 from './assets/rent a car.jpeg';
+import project2 from './assets/staysphere.JPG';
+import project3 from './assets/hotel reservation system.jpg';
+import project4 from './assets/smart campus operation hub.jpg';
+import project5 from './assets/wholesale veggies.JPG';
+import project6 from './assets/online customer care center.png';
+import project7 from './assets/mood.jpg';
 
 function App() {
   return (
@@ -27,14 +40,15 @@ function App() {
             <img src={myPhoto} alt="Ayesha" />
           </div>
           <div className="hero-content">
-  <h1>Hello<span>!</span></h1>
-  <p className="hero-intro">
-    I'm <strong>Ayesha Abeysinghe</strong>. IT Undergraduate at SLIIT 
-    & passionate Full-Stack and Mobile Developer. 
-    Welcome to my personal portfolio!
-  </p>
+
+      <h1 className="typing-text">Hello!</h1>
+        <p className="hero-intro">
+              I'm <strong>Ayesha Abeysinghe</strong>. IT Undergraduate at SLIIT 
+              & passionate Full-Stack and Mobile Developer. 
+              Welcome to my personal portfolio!
+        </p>
             <div className="hero-actions">
-              <button className="btn-dark">EXPLORE PROJECTS</button>
+              <a href="#projects" className="btn-dark">EXPLORE PROJECTS</a>
               <button className="btn-outline">GET IN TOUCH</button>
             </div>
           </div>
@@ -175,7 +189,7 @@ function App() {
     {/* Certificate 3 */}
     <div className="cert-card">
       <div className="cert-badge">NVQ Level 4</div>
-      <div className="cert-icon">💻</div>
+      <img src={nvq} alt="NVQ Certificate" className="cert-img" />
       <h4>ICT Technician (NVQ 4)</h4>
       <p>Vocational Training Authority of Sri Lanka</p>
     </div>
@@ -183,7 +197,7 @@ function App() {
     {/* Certificate 4 */}
     <div className="cert-card">
       <div className="cert-badge">LPEC</div>
-      <div className="cert-icon">🎓</div>
+      <img src={lpec} alt="English Certificate" className="cert-img" />
       <h4>Diploma in English</h4>
       <p>English Diploma - LPEC Campus</p>
     </div>
@@ -191,7 +205,7 @@ function App() {
     {/* Certificate 5 */}
     <div className="cert-card">
       <div className="cert-badge">UI/UX</div>
-      <div className="cert-icon">🎨</div>
+      <img src={dpEdu} alt="DP Certificate" className="cert-img" />
       <h4>UI/UX Design with Figma</h4>
       <p>DP Education Sri Lanka - 2026</p>
     </div>
@@ -199,7 +213,7 @@ function App() {
     {/* Certificate 6 */}
     <div className="cert-card">
       <div className="cert-badge">UoM</div>
-      <div className="cert-icon">🌐</div>
+      <img src={moratuwa} alt="Web Design Certificate" className="cert-img" />
       <h4>Web Design for Beginners</h4>
       <p>University of Moratuwa - Open Learning</p>
     </div>
@@ -207,9 +221,17 @@ function App() {
     {/* Certificate 7 */}
     <div className="cert-card">
       <div className="cert-badge">Simplilearn</div>
-      <div className="cert-icon">⚛️</div>
+      <img src={simplelearn} alt="ReactJS Certificate" className="cert-img" />
       <h4>ReactJS Components</h4>
       <p>Simplilearn - 2026</p>
+    </div>
+
+     {/* Certificate 8 */}
+    <div className="cert-card">
+      <div className="cert-badge">MongoDB</div>
+      <img src={mongodb} alt="MongoDB Certificate" className="cert-img" />
+      <h4>MongoDB Atlas Administrator Path</h4>
+      <p>MongoDB Inc.</p>
     </div>
   </div>
 </section>
@@ -225,7 +247,8 @@ function App() {
     {/* Project 1 */}
     <div className="project-card">
       <div className="project-info">
-        <span className="project-category">Mobile App / Kotlin</span>
+        <span className="project-category">Mobile Application</span>
+        <img src={project5} alt="Project" className="project-img" />
         <h3>Wholesale Veggies & Fruits Marketplace</h3>
         <p>A fully functional Android app for buying and selling fresh produce wholesale. Designed the UI in Figma and built with Kotlin — featuring product listings, cart logic, and smooth UX.</p>
         <div className="project-tags">
@@ -237,7 +260,8 @@ function App() {
     {/* Project 2 */}
     <div className="project-card">
       <div className="project-info">
-        <span className="project-category">Web App / MERN</span>
+        <span className="project-category">Web Application</span>
+        <img src={project3} alt="Project" className="project-img" />
         <h3>Hotel Reservation System</h3>
         <p>Developed a web based and hotel reservation system with booking , database storage and responsive UI.</p>
         <div className="project-tags">
@@ -249,11 +273,12 @@ function App() {
         {/* Project 3 */}
     <div className="project-card">
       <div className="project-info">
-        <span className="project-category">Mobile App / Kotlin</span>
-        <h3>Daily Habit Tracker & Mood journal with Emoji selector & Hydration Reminder -Mobile Application</h3>
+        <span className="project-category">Mobile Application</span>
+        <img src={project7} alt="Project" className="project-img" />
+        <h3>Daily Habit Tracker & Mood journal with Emoji selector & Hydration Reminder</h3>
         <p>Design and implement an interactive mobile app to manage the daily health routines of users.</p>
         <div className="project-tags">
-          <span>Kotlin</span> <span>Android Studio</span>
+          <span>Kotlin</span> <span>Android Studio</span> <span>Figma</span>
         </div>
       </div>
     </div>
@@ -262,10 +287,11 @@ function App() {
     <div className="project-card">
       <div className="project-info">
         <span className="project-category">Web App / MERN</span>
+        <img src={project1} alt="Project" className="project-img" />
         <h3>Rent a Car System</h3>
         <p>Successfully built a system for vehicle booking, agreement management, and database storage.</p>
         <div className="project-tags">
-          <span>MERN Stack</span> <span>Responsive UI</span>
+          <span>MERN Stack</span> <span>Responsive UI</span> <span>MongoDB</span>
         </div>
       </div>
     </div>
@@ -273,7 +299,8 @@ function App() {
         {/* Project 5 */}
     <div className="project-card">
       <div className="project-info">
-        <span className="project-category">Java / OOP</span>
+        <span className="project-category">Web Application</span>
+        <img src={project6} alt="Project" className="project-img" />
         <h3>Online Customer Care System</h3>
         <p>Auction platform with user management and customer care logic using OOP concepts.</p>
         <div className="project-tags">
@@ -285,8 +312,9 @@ function App() {
             {/* Project 6 */}
     <div className="project-card">
       <div className="project-info">
-        <span className="project-category">Web App / MERN - Present</span>
-        <h3>Hostel Management System</h3>
+        <span className="project-category">Web Application</span>
+        <img src={project2} alt="Project" className="project-img" />
+        <h3>Hostel Management System - "StaySphere" </h3>
         <p>Digital hostel management for university students with admin tools and automated testing.</p>
         <div className="project-tags">
           <span>React</span> <span>Node.js</span> <span>MongoDB</span> <span>Playwright</span>
@@ -297,7 +325,8 @@ function App() {
             {/* Project 7 */}
     <div className="project-card">
       <div className="project-info">
-        <span className="project-category">Web App / MERN - Present </span>
+        <span className="project-category">Web Application</span>
+        <img src={project4} alt="Project" className="project-img" />
         <h3>Smart Campus Operation Hub</h3>
         <p>A comprehensive platform for managing various campus operations with admin tools and automated testing.</p>
         <div className="project-tags">
@@ -338,7 +367,7 @@ function App() {
               <span className="icon">📍</span>
               <div>
                 <label>Location</label>
-                <p>Galle, Sri Lanka</p>
+                <p>Malabe, Sri Lanka</p>
               </div>
             </div>
           </div>
