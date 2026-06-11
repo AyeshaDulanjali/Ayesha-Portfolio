@@ -7,6 +7,8 @@ import nvq from './assets/NVQ4.jpg';
 import simplelearn from './assets/simplilearn.jpg';
 import moratuwa from './assets/web design moratuwa.jpg';
 import lpec from './assets/LPEC english.jpg';
+import Youth from './assets/Youth.jpeg';
+import English from './assets/anil sir english.jpeg';
 import mongodb from './assets/MongoDB Atlas.png';
 import project1 from './assets/rent a car.jpeg';
 import project2 from './assets/staysphere.JPG';
@@ -170,10 +172,11 @@ function App() {
   <h2 className="section-title">Certificates & <i>Achievements</i></h2>
 
   <div className="cert-grid">
+    
     {/* Certificate 1 */}
     <div className="cert-card">
       <div className="cert-badge">NYC</div>
-      <div className="cert-icon">🏆</div>
+      <img src={Youth} alt="Youth Certificate" className="cert-img" />
       <h4>Leadership & Personality Development</h4>
       <p>Successfully completed at National Youth Corps Training Center (NYC)</p>
     </div>
@@ -181,7 +184,7 @@ function App() {
     {/* Certificate 2 */}
     <div className="cert-card">
       <div className="cert-badge">British English</div>
-      <div className="cert-icon">🗣️</div>
+      <img src={English} alt="English Certificate" className="cert-img" />
       <h4>Spoken English & Grammar</h4>
       <p>British English Academy - Spoken & Grammar Course</p>
     </div>
@@ -378,7 +381,9 @@ function App() {
             <div className="social-buttons">
               <a href="https://www.linkedin.com/in/ayesha-abeysinghe-882b5b356/" target="_blank" className="social-btn linkedin">LinkedIn</a>
               <a href="https://github.com/AyeshaDulanjali" target="_blank" className="social-btn github">GitHub</a>
-              <a href="mailto:dilandiayesha@gmail.com" className="social-btn email">Send Email</a>
+              <a href="mailto:dilandiayesha@gmail.com?subject=Contact from Portfolio&body=Hello Ayesha," className="social-btn email">
+                  Send Email
+             </a>
             </div>
           </div>
         </div>
