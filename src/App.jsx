@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import myPhoto from './assets/profilephoto2.jpeg'; // ඔයාගේ photo එක assets එකට දාන්න
-import myCV from './assets/New CV.pdf'; // CV එක assets එකට දාන්න
+import myCV from './assets/FullStack-Ayesha-SLIIT.pdf'; // CV එක assets එකට දාන්න
 import dpEdu from './assets/DPEducation.jpg';
 import nvq from './assets/NVQ4.jpg';
 import simplelearn from './assets/simplilearn.jpg';
