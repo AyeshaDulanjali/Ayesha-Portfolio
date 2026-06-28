@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from "react";
 import './App.css';
 import myPhoto from './assets/profilephoto2.jpeg'; // ඔයාගේ photo එක assets එකට දාන්න
-import myCV from './assets/FullStack-Ayesha-SLIIT.pdf'; // CV එක assets එකට දාන්න
+import fullstack from './assets/FullStack-Ayesha-SLIIT.pdf';
+import uiux from './assets/UI-UX-Ayesha-SLIIT.pdf'; 
+import qa from './assets/QA-Ayesha-SLIIT.pdf';// CV එක assets එකට දාන්න
 import dpEdu from './assets/DPEducation.jpg';
 import nvq from './assets/NVQ4.jpg';
 import simplelearn from './assets/simplilearn.jpg';
@@ -20,6 +22,7 @@ import project7 from './assets/mood.jpg';
 import project8 from './assets/cake business.jpg';
 
 function App() {
+  const [showCVModal, setShowCVModal] = useState(false);
   return (
     <div className="portfolio">
       <nav className="navbar">
@@ -31,9 +34,12 @@ function App() {
           <a href="#certificates">CERTIFICATES</a>
           <a href="#contact">CONTACT</a>
         </div>
-        <a href={myCV} download className="download-cv">
-          <span>⬇</span> DOWNLOAD CV
-        </a>
+        <button
+          className="download-cv"
+          onClick={() => setShowCVModal(true)}
+        >
+        <span>⬇</span> DOWNLOAD CV
+        </button>
       </nav>
 
       {/* Hero Section */}
@@ -403,6 +409,38 @@ function App() {
           </div>
         </div>
       </section>
+
+
+    {/* ===== CV Modal ===== */}
+  {showCVModal && (
+        <div className="cv-modal-overlay">
+          <div className="cv-modal">
+
+            <h2>Select CV Version</h2>
+            <p>Pick a CV to Download</p>
+
+            <a href={fullStackCV} download className="cv-btn">
+              💻 Full Stack Developer
+            </a>
+
+            <a href={uiuxCV} download className="cv-btn">
+              🎨 UI/UX Designer
+            </a>
+
+            <a href={qaCV} download className="cv-btn">
+              🧪 QA Engineer
+            </a>
+
+            <button
+              className="close-btn"
+              onClick={() => setShowCVModal(false)}
+            >
+              Close
+            </button>
+
+          </div>
+        </div>
+      )}
 
 {/* Footer Bar */}
 
