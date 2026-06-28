@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import './App.css';
 import myPhoto from './assets/profilephoto2.jpeg'; // ඔයාගේ photo එක assets එකට දාන්න
-import fullstack from './assets/FullStack-Ayesha-SLIIT.pdf';
-import uiux from './assets/UI-UX-Ayesha-SLIIT.pdf'; 
-import qa from './assets/QA-Ayesha-SLIIT.pdf';// CV එක assets එකට දාන්න
+import fullStackCV from "./assets/FullStack-Ayesha-SLIIT.pdf";
+import uiuxCV from "./assets/UI-UX-Ayesha-SLIIT.pdf";
+import qaCV from "./assets/QA-Ayesha-SLIIT.pdf";// CV එක assets එකට දාන්න
 import dpEdu from './assets/DPEducation.jpg';
 import nvq from './assets/NVQ4.jpg';
 import simplelearn from './assets/simplilearn.jpg';
@@ -35,10 +35,9 @@ function App() {
           <a href="#contact">CONTACT</a>
         </div>
         <button
-          className="download-cv"
-          onClick={() => setShowCVModal(true)}
-        >
-        <span>⬇</span> DOWNLOAD CV
+              className="download-cv"
+              onClick={() => setShowCVModal(true)}>
+              ⬇ DOWNLOAD CV
         </button>
       </nav>
 
