@@ -17,6 +17,7 @@ import project4 from './assets/smart campus operation hub.jpg';
 import project5 from './assets/wholesale veggies.JPG';
 import project6 from './assets/online customer care center.png';
 import project7 from './assets/mood.jpg';
+import project8 from './assets/cake business.jpg';
 
 function App() {
   return (
@@ -337,7 +338,21 @@ function App() {
         </div>
       </div>
     </div>
-    
+
+      {/*Project 8 */}
+    <div className="project-card">
+      <div className="project-info">
+        <span className="project-category">UI/UX Design</span>
+        <img src={project8} alt="Project" className="project-img" />
+        <h3>New Year 2026 - Cake Business UI/UX Concept</h3>
+        <p>Welcoming 2026 with a fresh and creative cake business UI/UX concept, designed using Figma.
+        This concept represents a new-generation cake brand, focusing on elegance, simplicity, and a delightful digital experience for customers.</p>
+        <div className="project-tags">
+          <span>Figma</span> <span> UI/UX Design</span> <span>Wireframing</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
