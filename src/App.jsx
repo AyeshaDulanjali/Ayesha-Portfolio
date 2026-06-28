@@ -415,7 +415,7 @@ function App() {
         <div className="cv-modal-overlay">
           <div className="cv-modal">
 
-            <h2>Select CV Version</h2>
+            <h2>Choose CV Version</h2>
             <p>Pick a CV to Download</p>
 
             <a href={fullStackCV} download className="cv-btn">
